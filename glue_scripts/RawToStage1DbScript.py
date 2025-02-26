@@ -8,7 +8,7 @@ from pyspark.sql import functions as F
 from datetime import datetime
 import boto3
 import json
-## @params: [JOB_NAME]
+## @params: [JOB_NAME]  ###
 args = getResolvedOptions(sys.argv, ['JOB_NAME','s3inputpath','table'])
 
 sc = SparkContext()
